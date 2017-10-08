@@ -27,11 +27,12 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install -r requirements.txt
+            python setup.py install --user
 
       - save_cache:
           paths:
             - ./venv
+
           key: v1-dependencies-{{ checksum "requirements.txt" }}
         
       # run tests!
@@ -39,7 +40,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python manage.py test
+            python  test
 
       - store_artifacts:
           path: test-reports
