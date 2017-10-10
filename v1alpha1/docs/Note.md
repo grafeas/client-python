@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **package** | [**Package**](Package.md) | A note describing a package hosted by various package managers. | [optional] 
 **deployable** | [**Deployable**](Deployable.md) | A note describing something that can be deployed. | [optional] 
 **discovery** | [**Discovery**](Discovery.md) | A note describing a project/analysis type. | [optional] 
+**attestation_authority** | [**AttestationAuthority**](AttestationAuthority.md) | A note describing an attestation role. | [optional] 
 **related_url** | [**list[RelatedUrl]**](RelatedUrl.md) | Urls associated with this note | [optional] 
 **expiration_time** | **str** | Time of expiration for this Note, null if Note currently does not expire. | [optional] 
 **create_time** | **str** | The time this note was created. This field can be used as a filter in list requests. @OutputOnly | [optional] 

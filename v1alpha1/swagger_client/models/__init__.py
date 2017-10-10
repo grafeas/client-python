@@ -27,6 +27,9 @@ from __future__ import absolute_import
 # import models into model package
 from .alias_context import AliasContext
 from .artifact import Artifact
+from .attestation import Attestation
+from .attestation_authority import AttestationAuthority
+from .attestation_authority_hint import AttestationAuthorityHint
 from .basis import Basis
 from .build_details import BuildDetails
 from .build_provenance import BuildProvenance
@@ -64,6 +67,7 @@ from .occurrence import Occurrence
 from .operation import Operation
 from .package import Package
 from .package_issue import PackageIssue
+from .pgp_signed_attestation import PgpSignedAttestation
 from .project_repo_id import ProjectRepoId
 from .related_url import RelatedUrl
 from .repo_id import RepoId
