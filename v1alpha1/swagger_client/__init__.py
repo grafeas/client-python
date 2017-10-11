@@ -27,6 +27,9 @@ from __future__ import absolute_import
 # import models into sdk package
 from .models.alias_context import AliasContext
 from .models.artifact import Artifact
+from .models.attestation import Attestation
+from .models.attestation_authority import AttestationAuthority
+from .models.attestation_authority_hint import AttestationAuthorityHint
 from .models.basis import Basis
 from .models.build_details import BuildDetails
 from .models.build_provenance import BuildProvenance
@@ -64,6 +67,7 @@ from .models.occurrence import Occurrence
 from .models.operation import Operation
 from .models.package import Package
 from .models.package_issue import PackageIssue
+from .models.pgp_signed_attestation import PgpSignedAttestation
 from .models.project_repo_id import ProjectRepoId
 from .models.related_url import RelatedUrl
 from .models.repo_id import RepoId
