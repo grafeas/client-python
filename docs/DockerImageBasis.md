@@ -1,0 +1,11 @@
+# DockerImageBasis
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**resource_url** | **str** | The resource_url for the resource representing the basis of associated occurrence images. | [optional] 
+**fingerprint** | [**DockerImageFingerprint**](DockerImageFingerprint.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
