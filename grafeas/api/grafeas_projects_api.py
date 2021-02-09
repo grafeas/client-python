@@ -33,12 +33,12 @@ class GrafeasProjectsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def grafeas_projects_create_project(self, body, **kwargs):  # noqa: E501
+    def create_project(self, body, **kwargs):  # noqa: E501
         """Creates a new project.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_projects_create_project(body, async_req=True)
+        >>> thread = api.create_project(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -49,17 +49,17 @@ class GrafeasProjectsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_projects_create_project_with_http_info(body, **kwargs)  # noqa: E501
+            return self.create_project_with_http_info(body, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_projects_create_project_with_http_info(body, **kwargs)  # noqa: E501
+            (data) = self.create_project_with_http_info(body, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_projects_create_project_with_http_info(self, body, **kwargs):  # noqa: E501
+    def create_project_with_http_info(self, body, **kwargs):  # noqa: E501
         """Creates a new project.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_projects_create_project_with_http_info(body, async_req=True)
+        >>> thread = api.create_project_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -80,14 +80,14 @@ class GrafeasProjectsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_projects_create_project" % key
+                    " to method create_project" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `grafeas_projects_create_project`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `create_project`")  # noqa: E501
 
         collection_formats = {}
 
@@ -130,12 +130,12 @@ class GrafeasProjectsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_projects_delete_project(self, name, **kwargs):  # noqa: E501
+    def delete_project(self, name, **kwargs):  # noqa: E501
         """Deletes the specified project.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_projects_delete_project(name, async_req=True)
+        >>> thread = api.delete_project(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -146,17 +146,17 @@ class GrafeasProjectsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_projects_delete_project_with_http_info(name, **kwargs)  # noqa: E501
+            return self.delete_project_with_http_info(name, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_projects_delete_project_with_http_info(name, **kwargs)  # noqa: E501
+            (data) = self.delete_project_with_http_info(name, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_projects_delete_project_with_http_info(self, name, **kwargs):  # noqa: E501
+    def delete_project_with_http_info(self, name, **kwargs):  # noqa: E501
         """Deletes the specified project.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_projects_delete_project_with_http_info(name, async_req=True)
+        >>> thread = api.delete_project_with_http_info(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -177,14 +177,14 @@ class GrafeasProjectsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_projects_delete_project" % key
+                    " to method delete_project" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_projects_delete_project`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `delete_project`")  # noqa: E501
 
         collection_formats = {}
 
@@ -227,12 +227,12 @@ class GrafeasProjectsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_projects_get_project(self, name, **kwargs):  # noqa: E501
+    def get_project(self, name, **kwargs):  # noqa: E501
         """Gets the specified project.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_projects_get_project(name, async_req=True)
+        >>> thread = api.get_project(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -243,17 +243,17 @@ class GrafeasProjectsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_projects_get_project_with_http_info(name, **kwargs)  # noqa: E501
+            return self.get_project_with_http_info(name, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_projects_get_project_with_http_info(name, **kwargs)  # noqa: E501
+            (data) = self.get_project_with_http_info(name, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_projects_get_project_with_http_info(self, name, **kwargs):  # noqa: E501
+    def get_project_with_http_info(self, name, **kwargs):  # noqa: E501
         """Gets the specified project.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_projects_get_project_with_http_info(name, async_req=True)
+        >>> thread = api.get_project_with_http_info(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -274,14 +274,14 @@ class GrafeasProjectsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_projects_get_project" % key
+                    " to method get_project" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_projects_get_project`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `get_project`")  # noqa: E501
 
         collection_formats = {}
 
@@ -324,12 +324,12 @@ class GrafeasProjectsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_projects_list_projects(self, **kwargs):  # noqa: E501
+    def list_projects(self, **kwargs):  # noqa: E501
         """Lists projects.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_projects_list_projects(async_req=True)
+        >>> thread = api.list_projects(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -342,17 +342,17 @@ class GrafeasProjectsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_projects_list_projects_with_http_info(**kwargs)  # noqa: E501
+            return self.list_projects_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_projects_list_projects_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.list_projects_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def grafeas_projects_list_projects_with_http_info(self, **kwargs):  # noqa: E501
+    def list_projects_with_http_info(self, **kwargs):  # noqa: E501
         """Lists projects.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_projects_list_projects_with_http_info(async_req=True)
+        >>> thread = api.list_projects_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -375,7 +375,7 @@ class GrafeasProjectsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_projects_list_projects" % key
+                    " to method list_projects" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -388,9 +388,9 @@ class GrafeasProjectsApi(object):
         if 'filter' in params:
             query_params.append(('filter', params['filter']))  # noqa: E501
         if 'page_size' in params:
-            query_params.append(('pageSize', params['page_size']))  # noqa: E501
+            query_params.append(('page_size', params['page_size']))  # noqa: E501
         if 'page_token' in params:
-            query_params.append(('pageToken', params['page_token']))  # noqa: E501
+            query_params.append(('page_token', params['page_token']))  # noqa: E501
 
         header_params = {}
 

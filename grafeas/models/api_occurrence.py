@@ -50,20 +50,20 @@ class ApiOccurrence(object):
 
     attribute_map = {
         'name': 'name',
-        'resource_url': 'resourceUrl',
-        'note_name': 'noteName',
+        'resource_url': 'resource_url',
+        'note_name': 'note_name',
         'kind': 'kind',
-        'vulnerability_details': 'vulnerabilityDetails',
-        'build_details': 'buildDetails',
-        'derived_image_details': 'derivedImageDetails',
-        'installation_details': 'installationDetails',
-        'deployment_details': 'deploymentDetails',
-        'discovered_details': 'discoveredDetails',
-        'attestation_details': 'attestationDetails',
+        'vulnerability_details': 'vulnerability_details',
+        'build_details': 'build_details',
+        'derived_image_details': 'derived_image_details',
+        'installation_details': 'installation_details',
+        'deployment_details': 'deployment_details',
+        'discovered_details': 'discovered_details',
+        'attestation_details': 'attestation_details',
         'remediation': 'remediation',
-        'create_time': 'createTime',
-        'update_time': 'updateTime',
-        'operation_name': 'operationName'
+        'create_time': 'create_time',
+        'update_time': 'update_time',
+        'operation_name': 'operation_name'
     }
 
     def __init__(self, name=None, resource_url=None, note_name=None, kind=None, vulnerability_details=None, build_details=None, derived_image_details=None, installation_details=None, deployment_details=None, discovered_details=None, attestation_details=None, remediation=None, create_time=None, update_time=None, operation_name=None):  # noqa: E501

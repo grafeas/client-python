@@ -40,9 +40,9 @@ class PackageManagerDistribution(object):
     }
 
     attribute_map = {
-        'cpe_uri': 'cpeUri',
+        'cpe_uri': 'cpe_uri',
         'architecture': 'architecture',
-        'latest_version': 'latestVersion',
+        'latest_version': 'latest_version',
         'maintainer': 'maintainer',
         'url': 'url',
         'description': 'description'

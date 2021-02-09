@@ -37,9 +37,9 @@ class DockerImageFingerprint(object):
     }
 
     attribute_map = {
-        'v1_name': 'v1Name',
-        'v2_blob': 'v2Blob',
-        'v2_name': 'v2Name'
+        'v1_name': 'v1_name',
+        'v2_blob': 'v2_blob',
+        'v2_name': 'v2_name'
     }
 
     def __init__(self, v1_name=None, v2_blob=None, v2_name=None):  # noqa: E501

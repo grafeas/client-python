@@ -38,7 +38,7 @@ class ApiSourceContext(object):
     }
 
     attribute_map = {
-        'cloud_repo': 'cloudRepo',
+        'cloud_repo': 'cloud_repo',
         'gerrit': 'gerrit',
         'git': 'git',
         'labels': 'labels'

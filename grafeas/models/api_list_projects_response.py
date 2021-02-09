@@ -37,7 +37,7 @@ class ApiListProjectsResponse(object):
 
     attribute_map = {
         'projects': 'projects',
-        'next_page_token': 'nextPageToken'
+        'next_page_token': 'next_page_token'
     }
 
     def __init__(self, projects=None, next_page_token=None):  # noqa: E501

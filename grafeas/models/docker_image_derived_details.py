@@ -40,8 +40,8 @@ class DockerImageDerivedDetails(object):
     attribute_map = {
         'fingerprint': 'fingerprint',
         'distance': 'distance',
-        'layer_info': 'layerInfo',
-        'base_resource_url': 'baseResourceUrl'
+        'layer_info': 'layer_info',
+        'base_resource_url': 'base_resource_url'
     }
 
     def __init__(self, fingerprint=None, distance=None, layer_info=None, base_resource_url=None):  # noqa: E501

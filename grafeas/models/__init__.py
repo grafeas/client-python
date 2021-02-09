@@ -70,6 +70,7 @@ from grafeas.models.package_manager_installation_details import PackageManagerIn
 from grafeas.models.package_manager_package import PackageManagerPackage
 from grafeas.models.pgp_signed_attestation_content_type import PgpSignedAttestationContentType
 from grafeas.models.protobuf_any import ProtobufAny
+from grafeas.models.protobuf_field_mask import ProtobufFieldMask
 from grafeas.models.rpc_status import RpcStatus
 from grafeas.models.version_version_kind import VersionVersionKind
 from grafeas.models.vulnerability_type_detail import VulnerabilityTypeDetail

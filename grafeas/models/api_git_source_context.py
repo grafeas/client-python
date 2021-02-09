@@ -37,7 +37,7 @@ class ApiGitSourceContext(object):
 
     attribute_map = {
         'url': 'url',
-        'revision_id': 'revisionId'
+        'revision_id': 'revision_id'
     }
 
     def __init__(self, url=None, revision_id=None):  # noqa: E501

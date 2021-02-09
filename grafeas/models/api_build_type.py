@@ -36,7 +36,7 @@ class ApiBuildType(object):
     }
 
     attribute_map = {
-        'builder_version': 'builderVersion',
+        'builder_version': 'builder_version',
         'signature': 'signature'
     }
 

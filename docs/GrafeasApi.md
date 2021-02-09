@@ -1,27 +1,27 @@
 # grafeas.GrafeasApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**grafeas_create_note**](GrafeasApi.md#grafeas_create_note) | **POST** /v1alpha1/{parent&#x3D;projects/*}/notes | Creates a new &#x60;Note&#x60;.
-[**grafeas_create_occurrence**](GrafeasApi.md#grafeas_create_occurrence) | **POST** /v1alpha1/{parent&#x3D;projects/*}/occurrences | Creates a new &#x60;Occurrence&#x60;. Use this method to create &#x60;Occurrences&#x60; for a resource.
-[**grafeas_create_operation**](GrafeasApi.md#grafeas_create_operation) | **POST** /v1alpha1/{parent&#x3D;projects/*}/operations | Creates a new &#x60;Operation&#x60;.
-[**grafeas_delete_note**](GrafeasApi.md#grafeas_delete_note) | **DELETE** /v1alpha1/{name&#x3D;projects/*/notes/*} | Deletes the given &#x60;Note&#x60; from the system.
-[**grafeas_delete_occurrence**](GrafeasApi.md#grafeas_delete_occurrence) | **DELETE** /v1alpha1/{name&#x3D;projects/*/occurrences/*} | Deletes the given &#x60;Occurrence&#x60; from the system. Use this when an &#x60;Occurrence&#x60; is no longer applicable for the given resource.
-[**grafeas_get_note**](GrafeasApi.md#grafeas_get_note) | **GET** /v1alpha1/{name&#x3D;projects/*/notes/*} | Returns the requested &#x60;Note&#x60;.
-[**grafeas_get_occurrence**](GrafeasApi.md#grafeas_get_occurrence) | **GET** /v1alpha1/{name&#x3D;projects/*/occurrences/*} | Returns the requested &#x60;Occurrence&#x60;.
-[**grafeas_get_occurrence_note**](GrafeasApi.md#grafeas_get_occurrence_note) | **GET** /v1alpha1/{name&#x3D;projects/*/occurrences/*}/notes | Gets the &#x60;Note&#x60; attached to the given &#x60;Occurrence&#x60;.
-[**grafeas_list_note_occurrences**](GrafeasApi.md#grafeas_list_note_occurrences) | **GET** /v1alpha1/{name&#x3D;projects/*/notes/*}/occurrences | Lists &#x60;Occurrences&#x60; referencing the specified &#x60;Note&#x60;. Use this method to get all occurrences referencing your &#x60;Note&#x60; across all your customer projects.
-[**grafeas_list_notes**](GrafeasApi.md#grafeas_list_notes) | **GET** /v1alpha1/{parent&#x3D;projects/*}/notes | Lists all &#x60;Notes&#x60; for a given project.
-[**grafeas_list_occurrences**](GrafeasApi.md#grafeas_list_occurrences) | **GET** /v1alpha1/{parent&#x3D;projects/*}/occurrences | Lists active &#x60;Occurrences&#x60; for a given project matching the filters.
-[**grafeas_update_note**](GrafeasApi.md#grafeas_update_note) | **PATCH** /v1alpha1/{name&#x3D;projects/*/notes/*} | Updates an existing &#x60;Note&#x60;.
-[**grafeas_update_occurrence**](GrafeasApi.md#grafeas_update_occurrence) | **PATCH** /v1alpha1/{name&#x3D;projects/*/occurrences/*} | Updates an existing occurrence.
-[**grafeas_update_operation**](GrafeasApi.md#grafeas_update_operation) | **PATCH** /v1alpha1/{name&#x3D;projects/*/operations/*} | Updates an existing operation returns an error if operation  does not exist. The only valid operations are to update mark the done bit change the result.
+[**create_note**](GrafeasApi.md#create_note) | **POST** /v1alpha1/{parent&#x3D;projects/*}/notes | Creates a new &#x60;Note&#x60;.
+[**create_occurrence**](GrafeasApi.md#create_occurrence) | **POST** /v1alpha1/{parent&#x3D;projects/*}/occurrences | Creates a new &#x60;Occurrence&#x60;. Use this method to create &#x60;Occurrences&#x60; for a resource.
+[**create_operation**](GrafeasApi.md#create_operation) | **POST** /v1alpha1/{parent&#x3D;projects/*}/operations | Creates a new &#x60;Operation&#x60;.
+[**delete_note**](GrafeasApi.md#delete_note) | **DELETE** /v1alpha1/{name&#x3D;projects/*/notes/*} | Deletes the given &#x60;Note&#x60; from the system.
+[**delete_occurrence**](GrafeasApi.md#delete_occurrence) | **DELETE** /v1alpha1/{name&#x3D;projects/*/occurrences/*} | Deletes the given &#x60;Occurrence&#x60; from the system. Use this when an &#x60;Occurrence&#x60; is no longer applicable for the given resource.
+[**get_note**](GrafeasApi.md#get_note) | **GET** /v1alpha1/{name&#x3D;projects/*/notes/*} | Returns the requested &#x60;Note&#x60;.
+[**get_occurrence**](GrafeasApi.md#get_occurrence) | **GET** /v1alpha1/{name&#x3D;projects/*/occurrences/*} | Returns the requested &#x60;Occurrence&#x60;.
+[**get_occurrence_note**](GrafeasApi.md#get_occurrence_note) | **GET** /v1alpha1/{name&#x3D;projects/*/occurrences/*}/notes | Gets the &#x60;Note&#x60; attached to the given &#x60;Occurrence&#x60;.
+[**list_note_occurrences**](GrafeasApi.md#list_note_occurrences) | **GET** /v1alpha1/{name&#x3D;projects/*/notes/*}/occurrences | Lists &#x60;Occurrences&#x60; referencing the specified &#x60;Note&#x60;. Use this method to get all occurrences referencing your &#x60;Note&#x60; across all your customer projects.
+[**list_notes**](GrafeasApi.md#list_notes) | **GET** /v1alpha1/{parent&#x3D;projects/*}/notes | Lists all &#x60;Notes&#x60; for a given project.
+[**list_occurrences**](GrafeasApi.md#list_occurrences) | **GET** /v1alpha1/{parent&#x3D;projects/*}/occurrences | Lists active &#x60;Occurrences&#x60; for a given project matching the filters.
+[**update_note**](GrafeasApi.md#update_note) | **PATCH** /v1alpha1/{name&#x3D;projects/*/notes/*} | Updates an existing &#x60;Note&#x60;.
+[**update_occurrence**](GrafeasApi.md#update_occurrence) | **PATCH** /v1alpha1/{name&#x3D;projects/*/occurrences/*} | Updates an existing occurrence.
+[**update_operation**](GrafeasApi.md#update_operation) | **PATCH** /v1alpha1/{name&#x3D;projects/*/operations/*} | Updates an existing operation returns an error if operation  does not exist. The only valid operations are to update mark the done bit change the result.
 
 
-# **grafeas_create_note**
-> ApiNote grafeas_create_note(parent, body, note_id=note_id)
+# **create_note**
+> ApiNote create_note(parent, body)
 
 Creates a new `Note`.
 
@@ -37,14 +37,13 @@ from pprint import pprint
 api_instance = grafeas.GrafeasApi()
 parent = 'parent_example' # str | This field contains the project Id for example: \"project/{project_id}
 body = grafeas.ApiNote() # ApiNote | The Note to be inserted
-note_id = 'note_id_example' # str | The ID to use for this note. (optional)
 
 try:
     # Creates a new `Note`.
-    api_response = api_instance.grafeas_create_note(parent, body, note_id=note_id)
+    api_response = api_instance.create_note(parent, body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_create_note: %s\n" % e)
+    print("Exception when calling GrafeasApi->create_note: %s\n" % e)
 ```
 
 ### Parameters
@@ -53,7 +52,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **parent** | **str**| This field contains the project Id for example: \&quot;project/{project_id} | 
  **body** | [**ApiNote**](ApiNote.md)| The Note to be inserted | 
- **note_id** | **str**| The ID to use for this note. | [optional] 
 
 ### Return type
 
@@ -70,8 +68,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_create_occurrence**
-> ApiOccurrence grafeas_create_occurrence(parent, body)
+# **create_occurrence**
+> ApiOccurrence create_occurrence(parent, body)
 
 Creates a new `Occurrence`. Use this method to create `Occurrences` for a resource.
 
@@ -90,10 +88,10 @@ body = grafeas.ApiOccurrence() # ApiOccurrence | The occurrence to be inserted.
 
 try:
     # Creates a new `Occurrence`. Use this method to create `Occurrences` for a resource.
-    api_response = api_instance.grafeas_create_occurrence(parent, body)
+    api_response = api_instance.create_occurrence(parent, body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_create_occurrence: %s\n" % e)
+    print("Exception when calling GrafeasApi->create_occurrence: %s\n" % e)
 ```
 
 ### Parameters
@@ -118,8 +116,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_create_operation**
-> GooglelongrunningOperation grafeas_create_operation(parent, body)
+# **create_operation**
+> GooglelongrunningOperation create_operation(parent, body)
 
 Creates a new `Operation`.
 
@@ -138,10 +136,10 @@ body = grafeas.ApiCreateOperationRequest() # ApiCreateOperationRequest |
 
 try:
     # Creates a new `Operation`.
-    api_response = api_instance.grafeas_create_operation(parent, body)
+    api_response = api_instance.create_operation(parent, body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_create_operation: %s\n" % e)
+    print("Exception when calling GrafeasApi->create_operation: %s\n" % e)
 ```
 
 ### Parameters
@@ -166,8 +164,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_delete_note**
-> object grafeas_delete_note(name)
+# **delete_note**
+> object delete_note(name)
 
 Deletes the given `Note` from the system.
 
@@ -185,10 +183,10 @@ name = 'name_example' # str | The name of the note in the form of \"providers/{p
 
 try:
     # Deletes the given `Note` from the system.
-    api_response = api_instance.grafeas_delete_note(name)
+    api_response = api_instance.delete_note(name)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_delete_note: %s\n" % e)
+    print("Exception when calling GrafeasApi->delete_note: %s\n" % e)
 ```
 
 ### Parameters
@@ -212,8 +210,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_delete_occurrence**
-> object grafeas_delete_occurrence(name)
+# **delete_occurrence**
+> object delete_occurrence(name)
 
 Deletes the given `Occurrence` from the system. Use this when an `Occurrence` is no longer applicable for the given resource.
 
@@ -231,10 +229,10 @@ name = 'name_example' # str | The name of the occurrence in the form of \"projec
 
 try:
     # Deletes the given `Occurrence` from the system. Use this when an `Occurrence` is no longer applicable for the given resource.
-    api_response = api_instance.grafeas_delete_occurrence(name)
+    api_response = api_instance.delete_occurrence(name)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_delete_occurrence: %s\n" % e)
+    print("Exception when calling GrafeasApi->delete_occurrence: %s\n" % e)
 ```
 
 ### Parameters
@@ -258,8 +256,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_get_note**
-> ApiNote grafeas_get_note(name)
+# **get_note**
+> ApiNote get_note(name)
 
 Returns the requested `Note`.
 
@@ -277,10 +275,10 @@ name = 'name_example' # str | The name of the note in the form of \"providers/{p
 
 try:
     # Returns the requested `Note`.
-    api_response = api_instance.grafeas_get_note(name)
+    api_response = api_instance.get_note(name)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_get_note: %s\n" % e)
+    print("Exception when calling GrafeasApi->get_note: %s\n" % e)
 ```
 
 ### Parameters
@@ -304,8 +302,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_get_occurrence**
-> ApiOccurrence grafeas_get_occurrence(name)
+# **get_occurrence**
+> ApiOccurrence get_occurrence(name)
 
 Returns the requested `Occurrence`.
 
@@ -323,10 +321,10 @@ name = 'name_example' # str | The name of the occurrence of the form \"projects/
 
 try:
     # Returns the requested `Occurrence`.
-    api_response = api_instance.grafeas_get_occurrence(name)
+    api_response = api_instance.get_occurrence(name)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_get_occurrence: %s\n" % e)
+    print("Exception when calling GrafeasApi->get_occurrence: %s\n" % e)
 ```
 
 ### Parameters
@@ -350,8 +348,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_get_occurrence_note**
-> ApiNote grafeas_get_occurrence_note(name)
+# **get_occurrence_note**
+> ApiNote get_occurrence_note(name)
 
 Gets the `Note` attached to the given `Occurrence`.
 
@@ -369,10 +367,10 @@ name = 'name_example' # str | The name of the occurrence in the form \"projects/
 
 try:
     # Gets the `Note` attached to the given `Occurrence`.
-    api_response = api_instance.grafeas_get_occurrence_note(name)
+    api_response = api_instance.get_occurrence_note(name)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_get_occurrence_note: %s\n" % e)
+    print("Exception when calling GrafeasApi->get_occurrence_note: %s\n" % e)
 ```
 
 ### Parameters
@@ -396,8 +394,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_list_note_occurrences**
-> ApiListNoteOccurrencesResponse grafeas_list_note_occurrences(name, filter=filter, page_size=page_size, page_token=page_token)
+# **list_note_occurrences**
+> ApiListNoteOccurrencesResponse list_note_occurrences(name, filter=filter, page_size=page_size, page_token=page_token)
 
 Lists `Occurrences` referencing the specified `Note`. Use this method to get all occurrences referencing your `Note` across all your customer projects.
 
@@ -418,10 +416,10 @@ page_token = 'page_token_example' # str | Token to provide to skip to a particul
 
 try:
     # Lists `Occurrences` referencing the specified `Note`. Use this method to get all occurrences referencing your `Note` across all your customer projects.
-    api_response = api_instance.grafeas_list_note_occurrences(name, filter=filter, page_size=page_size, page_token=page_token)
+    api_response = api_instance.list_note_occurrences(name, filter=filter, page_size=page_size, page_token=page_token)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_list_note_occurrences: %s\n" % e)
+    print("Exception when calling GrafeasApi->list_note_occurrences: %s\n" % e)
 ```
 
 ### Parameters
@@ -448,8 +446,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_list_notes**
-> ApiListNotesResponse grafeas_list_notes(parent, filter=filter, page_size=page_size, page_token=page_token)
+# **list_notes**
+> ApiListNotesResponse list_notes(parent, filter=filter, page_size=page_size, page_token=page_token)
 
 Lists all `Notes` for a given project.
 
@@ -470,10 +468,10 @@ page_token = 'page_token_example' # str | Token to provide to skip to a particul
 
 try:
     # Lists all `Notes` for a given project.
-    api_response = api_instance.grafeas_list_notes(parent, filter=filter, page_size=page_size, page_token=page_token)
+    api_response = api_instance.list_notes(parent, filter=filter, page_size=page_size, page_token=page_token)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_list_notes: %s\n" % e)
+    print("Exception when calling GrafeasApi->list_notes: %s\n" % e)
 ```
 
 ### Parameters
@@ -500,8 +498,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_list_occurrences**
-> ApiListOccurrencesResponse grafeas_list_occurrences(parent, filter=filter, page_size=page_size, page_token=page_token)
+# **list_occurrences**
+> ApiListOccurrencesResponse list_occurrences(parent, filter=filter, page_size=page_size, page_token=page_token)
 
 Lists active `Occurrences` for a given project matching the filters.
 
@@ -522,10 +520,10 @@ page_token = 'page_token_example' # str | Token to provide to skip to a particul
 
 try:
     # Lists active `Occurrences` for a given project matching the filters.
-    api_response = api_instance.grafeas_list_occurrences(parent, filter=filter, page_size=page_size, page_token=page_token)
+    api_response = api_instance.list_occurrences(parent, filter=filter, page_size=page_size, page_token=page_token)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_list_occurrences: %s\n" % e)
+    print("Exception when calling GrafeasApi->list_occurrences: %s\n" % e)
 ```
 
 ### Parameters
@@ -552,8 +550,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_update_note**
-> ApiNote grafeas_update_note(name, body, update_mask=update_mask)
+# **update_note**
+> ApiNote update_note(name, body)
 
 Updates an existing `Note`.
 
@@ -569,14 +567,13 @@ from pprint import pprint
 api_instance = grafeas.GrafeasApi()
 name = 'name_example' # str | The name of the note. Should be of the form \"projects/{provider_id}/notes/{note_id}\".
 body = grafeas.ApiNote() # ApiNote | The updated note.
-update_mask = ['update_mask_example'] # list[str] | The fields to update. (optional)
 
 try:
     # Updates an existing `Note`.
-    api_response = api_instance.grafeas_update_note(name, body, update_mask=update_mask)
+    api_response = api_instance.update_note(name, body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_update_note: %s\n" % e)
+    print("Exception when calling GrafeasApi->update_note: %s\n" % e)
 ```
 
 ### Parameters
@@ -585,7 +582,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **str**| The name of the note. Should be of the form \&quot;projects/{provider_id}/notes/{note_id}\&quot;. | 
  **body** | [**ApiNote**](ApiNote.md)| The updated note. | 
- **update_mask** | [**list[str]**](str.md)| The fields to update. | [optional] 
 
 ### Return type
 
@@ -602,8 +598,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_update_occurrence**
-> ApiOccurrence grafeas_update_occurrence(name, body, update_mask=update_mask)
+# **update_occurrence**
+> ApiOccurrence update_occurrence(name, body)
 
 Updates an existing occurrence.
 
@@ -619,14 +615,13 @@ from pprint import pprint
 api_instance = grafeas.GrafeasApi()
 name = 'name_example' # str | The name of the occurrence. Should be of the form \"projects/{project_id}/occurrences/{OCCURRENCE_ID}\".
 body = grafeas.ApiOccurrence() # ApiOccurrence | The updated occurrence.
-update_mask = ['update_mask_example'] # list[str] | The fields to update. (optional)
 
 try:
     # Updates an existing occurrence.
-    api_response = api_instance.grafeas_update_occurrence(name, body, update_mask=update_mask)
+    api_response = api_instance.update_occurrence(name, body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_update_occurrence: %s\n" % e)
+    print("Exception when calling GrafeasApi->update_occurrence: %s\n" % e)
 ```
 
 ### Parameters
@@ -635,7 +630,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **str**| The name of the occurrence. Should be of the form \&quot;projects/{project_id}/occurrences/{OCCURRENCE_ID}\&quot;. | 
  **body** | [**ApiOccurrence**](ApiOccurrence.md)| The updated occurrence. | 
- **update_mask** | [**list[str]**](str.md)| The fields to update. | [optional] 
 
 ### Return type
 
@@ -652,8 +646,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **grafeas_update_operation**
-> GooglelongrunningOperation grafeas_update_operation(name, body)
+# **update_operation**
+> GooglelongrunningOperation update_operation(name, body)
 
 Updates an existing operation returns an error if operation  does not exist. The only valid operations are to update mark the done bit change the result.
 
@@ -672,10 +666,10 @@ body = grafeas.ApiUpdateOperationRequest() # ApiUpdateOperationRequest |
 
 try:
     # Updates an existing operation returns an error if operation  does not exist. The only valid operations are to update mark the done bit change the result.
-    api_response = api_instance.grafeas_update_operation(name, body)
+    api_response = api_instance.update_operation(name, body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling GrafeasApi->grafeas_update_operation: %s\n" % e)
+    print("Exception when calling GrafeasApi->update_operation: %s\n" % e)
 ```
 
 ### Parameters

@@ -41,12 +41,12 @@ class DeployableDeploymentDetails(object):
     }
 
     attribute_map = {
-        'user_email': 'userEmail',
-        'deploy_time': 'deployTime',
-        'undeploy_time': 'undeployTime',
+        'user_email': 'user_email',
+        'deploy_time': 'deploy_time',
+        'undeploy_time': 'undeploy_time',
         'config': 'config',
         'address': 'address',
-        'resource_uri': 'resourceUri',
+        'resource_uri': 'resource_uri',
         'platform': 'platform'
     }
 

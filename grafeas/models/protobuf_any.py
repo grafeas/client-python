@@ -36,7 +36,7 @@ class ProtobufAny(object):
     }
 
     attribute_map = {
-        'type_url': 'typeUrl',
+        'type_url': 'type_url',
         'value': 'value'
     }
 

@@ -37,7 +37,7 @@ class ApiListOccurrencesResponse(object):
 
     attribute_map = {
         'occurrences': 'occurrences',
-        'next_page_token': 'nextPageToken'
+        'next_page_token': 'next_page_token'
     }
 
     def __init__(self, occurrences=None, next_page_token=None):  # noqa: E501

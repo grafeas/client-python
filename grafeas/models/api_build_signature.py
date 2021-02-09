@@ -38,10 +38,10 @@ class ApiBuildSignature(object):
     }
 
     attribute_map = {
-        'public_key': 'publicKey',
+        'public_key': 'public_key',
         'signature': 'signature',
-        'key_id': 'keyId',
-        'key_type': 'keyType'
+        'key_id': 'key_id',
+        'key_type': 'key_type'
     }
 
     def __init__(self, public_key=None, signature=None, key_id=None, key_type=None):  # noqa: E501

@@ -36,8 +36,8 @@ class ApiProjectRepoId(object):
     }
 
     attribute_map = {
-        'project_id': 'projectId',
-        'repo_name': 'repoName'
+        'project_id': 'project_id',
+        'repo_name': 'repo_name'
     }
 
     def __init__(self, project_id=None, repo_name=None):  # noqa: E501

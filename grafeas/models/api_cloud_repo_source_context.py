@@ -37,9 +37,9 @@ class ApiCloudRepoSourceContext(object):
     }
 
     attribute_map = {
-        'repo_id': 'repoId',
-        'revision_id': 'revisionId',
-        'alias_context': 'aliasContext'
+        'repo_id': 'repo_id',
+        'revision_id': 'revision_id',
+        'alias_context': 'alias_context'
     }
 
     def __init__(self, repo_id=None, revision_id=None, alias_context=None):  # noqa: E501

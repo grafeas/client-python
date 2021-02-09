@@ -40,12 +40,12 @@ class ApiSource(object):
     }
 
     attribute_map = {
-        'storage_source': 'storageSource',
-        'repo_source': 'repoSource',
-        'artifact_storage_source': 'artifactStorageSource',
-        'file_hashes': 'fileHashes',
+        'storage_source': 'storage_source',
+        'repo_source': 'repo_source',
+        'artifact_storage_source': 'artifact_storage_source',
+        'file_hashes': 'file_hashes',
         'context': 'context',
-        'additional_contexts': 'additionalContexts'
+        'additional_contexts': 'additional_contexts'
     }
 
     def __init__(self, storage_source=None, repo_source=None, artifact_storage_source=None, file_hashes=None, context=None, additional_contexts=None):  # noqa: E501

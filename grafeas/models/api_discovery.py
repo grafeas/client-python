@@ -35,7 +35,7 @@ class ApiDiscovery(object):
     }
 
     attribute_map = {
-        'analysis_kind': 'analysisKind'
+        'analysis_kind': 'analysis_kind'
     }
 
     def __init__(self, analysis_kind=None):  # noqa: E501

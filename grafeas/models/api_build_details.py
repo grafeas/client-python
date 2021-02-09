@@ -37,7 +37,7 @@ class ApiBuildDetails(object):
 
     attribute_map = {
         'provenance': 'provenance',
-        'provenance_bytes': 'provenanceBytes'
+        'provenance_bytes': 'provenance_bytes'
     }
 
     def __init__(self, provenance=None, provenance_bytes=None):  # noqa: E501

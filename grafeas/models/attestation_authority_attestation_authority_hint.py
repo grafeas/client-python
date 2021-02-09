@@ -35,7 +35,7 @@ class AttestationAuthorityAttestationAuthorityHint(object):
     }
 
     attribute_map = {
-        'human_readable_name': 'humanReadableName'
+        'human_readable_name': 'human_readable_name'
     }
 
     def __init__(self, human_readable_name=None):  # noqa: E501

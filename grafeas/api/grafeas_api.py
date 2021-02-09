@@ -33,47 +33,45 @@ class GrafeasApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def grafeas_create_note(self, parent, body, **kwargs):  # noqa: E501
+    def create_note(self, parent, body, **kwargs):  # noqa: E501
         """Creates a new `Note`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_create_note(parent, body, async_req=True)
+        >>> thread = api.create_note(parent, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str parent: This field contains the project Id for example: \"project/{project_id} (required)
         :param ApiNote body: The Note to be inserted (required)
-        :param str note_id: The ID to use for this note.
         :return: ApiNote
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_create_note_with_http_info(parent, body, **kwargs)  # noqa: E501
+            return self.create_note_with_http_info(parent, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_create_note_with_http_info(parent, body, **kwargs)  # noqa: E501
+            (data) = self.create_note_with_http_info(parent, body, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_create_note_with_http_info(self, parent, body, **kwargs):  # noqa: E501
+    def create_note_with_http_info(self, parent, body, **kwargs):  # noqa: E501
         """Creates a new `Note`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_create_note_with_http_info(parent, body, async_req=True)
+        >>> thread = api.create_note_with_http_info(parent, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str parent: This field contains the project Id for example: \"project/{project_id} (required)
         :param ApiNote body: The Note to be inserted (required)
-        :param str note_id: The ID to use for this note.
         :return: ApiNote
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['parent', 'body', 'note_id']  # noqa: E501
+        all_params = ['parent', 'body']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -84,18 +82,18 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_create_note" % key
+                    " to method create_note" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'parent' is set
         if ('parent' not in params or
                 params['parent'] is None):
-            raise ValueError("Missing the required parameter `parent` when calling `grafeas_create_note`")  # noqa: E501
+            raise ValueError("Missing the required parameter `parent` when calling `create_note`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `grafeas_create_note`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `create_note`")  # noqa: E501
 
         collection_formats = {}
 
@@ -104,8 +102,6 @@ class GrafeasApi(object):
             path_params['parent'] = params['parent']  # noqa: E501
 
         query_params = []
-        if 'note_id' in params:
-            query_params.append(('noteId', params['note_id']))  # noqa: E501
 
         header_params = {}
 
@@ -142,12 +138,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_create_occurrence(self, parent, body, **kwargs):  # noqa: E501
+    def create_occurrence(self, parent, body, **kwargs):  # noqa: E501
         """Creates a new `Occurrence`. Use this method to create `Occurrences` for a resource.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_create_occurrence(parent, body, async_req=True)
+        >>> thread = api.create_occurrence(parent, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -159,17 +155,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_create_occurrence_with_http_info(parent, body, **kwargs)  # noqa: E501
+            return self.create_occurrence_with_http_info(parent, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_create_occurrence_with_http_info(parent, body, **kwargs)  # noqa: E501
+            (data) = self.create_occurrence_with_http_info(parent, body, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_create_occurrence_with_http_info(self, parent, body, **kwargs):  # noqa: E501
+    def create_occurrence_with_http_info(self, parent, body, **kwargs):  # noqa: E501
         """Creates a new `Occurrence`. Use this method to create `Occurrences` for a resource.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_create_occurrence_with_http_info(parent, body, async_req=True)
+        >>> thread = api.create_occurrence_with_http_info(parent, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -191,18 +187,18 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_create_occurrence" % key
+                    " to method create_occurrence" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'parent' is set
         if ('parent' not in params or
                 params['parent'] is None):
-            raise ValueError("Missing the required parameter `parent` when calling `grafeas_create_occurrence`")  # noqa: E501
+            raise ValueError("Missing the required parameter `parent` when calling `create_occurrence`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `grafeas_create_occurrence`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `create_occurrence`")  # noqa: E501
 
         collection_formats = {}
 
@@ -247,12 +243,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_create_operation(self, parent, body, **kwargs):  # noqa: E501
+    def create_operation(self, parent, body, **kwargs):  # noqa: E501
         """Creates a new `Operation`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_create_operation(parent, body, async_req=True)
+        >>> thread = api.create_operation(parent, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -264,17 +260,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_create_operation_with_http_info(parent, body, **kwargs)  # noqa: E501
+            return self.create_operation_with_http_info(parent, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_create_operation_with_http_info(parent, body, **kwargs)  # noqa: E501
+            (data) = self.create_operation_with_http_info(parent, body, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_create_operation_with_http_info(self, parent, body, **kwargs):  # noqa: E501
+    def create_operation_with_http_info(self, parent, body, **kwargs):  # noqa: E501
         """Creates a new `Operation`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_create_operation_with_http_info(parent, body, async_req=True)
+        >>> thread = api.create_operation_with_http_info(parent, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -296,18 +292,18 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_create_operation" % key
+                    " to method create_operation" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'parent' is set
         if ('parent' not in params or
                 params['parent'] is None):
-            raise ValueError("Missing the required parameter `parent` when calling `grafeas_create_operation`")  # noqa: E501
+            raise ValueError("Missing the required parameter `parent` when calling `create_operation`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `grafeas_create_operation`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `create_operation`")  # noqa: E501
 
         collection_formats = {}
 
@@ -352,12 +348,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_delete_note(self, name, **kwargs):  # noqa: E501
+    def delete_note(self, name, **kwargs):  # noqa: E501
         """Deletes the given `Note` from the system.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_delete_note(name, async_req=True)
+        >>> thread = api.delete_note(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -368,17 +364,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_delete_note_with_http_info(name, **kwargs)  # noqa: E501
+            return self.delete_note_with_http_info(name, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_delete_note_with_http_info(name, **kwargs)  # noqa: E501
+            (data) = self.delete_note_with_http_info(name, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_delete_note_with_http_info(self, name, **kwargs):  # noqa: E501
+    def delete_note_with_http_info(self, name, **kwargs):  # noqa: E501
         """Deletes the given `Note` from the system.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_delete_note_with_http_info(name, async_req=True)
+        >>> thread = api.delete_note_with_http_info(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -399,14 +395,14 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_delete_note" % key
+                    " to method delete_note" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_delete_note`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `delete_note`")  # noqa: E501
 
         collection_formats = {}
 
@@ -449,12 +445,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_delete_occurrence(self, name, **kwargs):  # noqa: E501
+    def delete_occurrence(self, name, **kwargs):  # noqa: E501
         """Deletes the given `Occurrence` from the system. Use this when an `Occurrence` is no longer applicable for the given resource.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_delete_occurrence(name, async_req=True)
+        >>> thread = api.delete_occurrence(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -465,17 +461,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_delete_occurrence_with_http_info(name, **kwargs)  # noqa: E501
+            return self.delete_occurrence_with_http_info(name, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_delete_occurrence_with_http_info(name, **kwargs)  # noqa: E501
+            (data) = self.delete_occurrence_with_http_info(name, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_delete_occurrence_with_http_info(self, name, **kwargs):  # noqa: E501
+    def delete_occurrence_with_http_info(self, name, **kwargs):  # noqa: E501
         """Deletes the given `Occurrence` from the system. Use this when an `Occurrence` is no longer applicable for the given resource.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_delete_occurrence_with_http_info(name, async_req=True)
+        >>> thread = api.delete_occurrence_with_http_info(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -496,14 +492,14 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_delete_occurrence" % key
+                    " to method delete_occurrence" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_delete_occurrence`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `delete_occurrence`")  # noqa: E501
 
         collection_formats = {}
 
@@ -546,12 +542,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_get_note(self, name, **kwargs):  # noqa: E501
+    def get_note(self, name, **kwargs):  # noqa: E501
         """Returns the requested `Note`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_get_note(name, async_req=True)
+        >>> thread = api.get_note(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -562,17 +558,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_get_note_with_http_info(name, **kwargs)  # noqa: E501
+            return self.get_note_with_http_info(name, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_get_note_with_http_info(name, **kwargs)  # noqa: E501
+            (data) = self.get_note_with_http_info(name, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_get_note_with_http_info(self, name, **kwargs):  # noqa: E501
+    def get_note_with_http_info(self, name, **kwargs):  # noqa: E501
         """Returns the requested `Note`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_get_note_with_http_info(name, async_req=True)
+        >>> thread = api.get_note_with_http_info(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -593,14 +589,14 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_get_note" % key
+                    " to method get_note" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_get_note`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `get_note`")  # noqa: E501
 
         collection_formats = {}
 
@@ -643,12 +639,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_get_occurrence(self, name, **kwargs):  # noqa: E501
+    def get_occurrence(self, name, **kwargs):  # noqa: E501
         """Returns the requested `Occurrence`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_get_occurrence(name, async_req=True)
+        >>> thread = api.get_occurrence(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -659,17 +655,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_get_occurrence_with_http_info(name, **kwargs)  # noqa: E501
+            return self.get_occurrence_with_http_info(name, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_get_occurrence_with_http_info(name, **kwargs)  # noqa: E501
+            (data) = self.get_occurrence_with_http_info(name, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_get_occurrence_with_http_info(self, name, **kwargs):  # noqa: E501
+    def get_occurrence_with_http_info(self, name, **kwargs):  # noqa: E501
         """Returns the requested `Occurrence`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_get_occurrence_with_http_info(name, async_req=True)
+        >>> thread = api.get_occurrence_with_http_info(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -690,14 +686,14 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_get_occurrence" % key
+                    " to method get_occurrence" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_get_occurrence`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `get_occurrence`")  # noqa: E501
 
         collection_formats = {}
 
@@ -740,12 +736,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_get_occurrence_note(self, name, **kwargs):  # noqa: E501
+    def get_occurrence_note(self, name, **kwargs):  # noqa: E501
         """Gets the `Note` attached to the given `Occurrence`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_get_occurrence_note(name, async_req=True)
+        >>> thread = api.get_occurrence_note(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -756,17 +752,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_get_occurrence_note_with_http_info(name, **kwargs)  # noqa: E501
+            return self.get_occurrence_note_with_http_info(name, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_get_occurrence_note_with_http_info(name, **kwargs)  # noqa: E501
+            (data) = self.get_occurrence_note_with_http_info(name, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_get_occurrence_note_with_http_info(self, name, **kwargs):  # noqa: E501
+    def get_occurrence_note_with_http_info(self, name, **kwargs):  # noqa: E501
         """Gets the `Note` attached to the given `Occurrence`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_get_occurrence_note_with_http_info(name, async_req=True)
+        >>> thread = api.get_occurrence_note_with_http_info(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -787,14 +783,14 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_get_occurrence_note" % key
+                    " to method get_occurrence_note" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_get_occurrence_note`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `get_occurrence_note`")  # noqa: E501
 
         collection_formats = {}
 
@@ -837,12 +833,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_list_note_occurrences(self, name, **kwargs):  # noqa: E501
+    def list_note_occurrences(self, name, **kwargs):  # noqa: E501
         """Lists `Occurrences` referencing the specified `Note`. Use this method to get all occurrences referencing your `Note` across all your customer projects.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_list_note_occurrences(name, async_req=True)
+        >>> thread = api.list_note_occurrences(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -856,17 +852,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_list_note_occurrences_with_http_info(name, **kwargs)  # noqa: E501
+            return self.list_note_occurrences_with_http_info(name, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_list_note_occurrences_with_http_info(name, **kwargs)  # noqa: E501
+            (data) = self.list_note_occurrences_with_http_info(name, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_list_note_occurrences_with_http_info(self, name, **kwargs):  # noqa: E501
+    def list_note_occurrences_with_http_info(self, name, **kwargs):  # noqa: E501
         """Lists `Occurrences` referencing the specified `Note`. Use this method to get all occurrences referencing your `Note` across all your customer projects.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_list_note_occurrences_with_http_info(name, async_req=True)
+        >>> thread = api.list_note_occurrences_with_http_info(name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -890,14 +886,14 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_list_note_occurrences" % key
+                    " to method list_note_occurrences" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_list_note_occurrences`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `list_note_occurrences`")  # noqa: E501
 
         collection_formats = {}
 
@@ -909,9 +905,9 @@ class GrafeasApi(object):
         if 'filter' in params:
             query_params.append(('filter', params['filter']))  # noqa: E501
         if 'page_size' in params:
-            query_params.append(('pageSize', params['page_size']))  # noqa: E501
+            query_params.append(('page_size', params['page_size']))  # noqa: E501
         if 'page_token' in params:
-            query_params.append(('pageToken', params['page_token']))  # noqa: E501
+            query_params.append(('page_token', params['page_token']))  # noqa: E501
 
         header_params = {}
 
@@ -946,12 +942,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_list_notes(self, parent, **kwargs):  # noqa: E501
+    def list_notes(self, parent, **kwargs):  # noqa: E501
         """Lists all `Notes` for a given project.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_list_notes(parent, async_req=True)
+        >>> thread = api.list_notes(parent, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -965,17 +961,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_list_notes_with_http_info(parent, **kwargs)  # noqa: E501
+            return self.list_notes_with_http_info(parent, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_list_notes_with_http_info(parent, **kwargs)  # noqa: E501
+            (data) = self.list_notes_with_http_info(parent, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_list_notes_with_http_info(self, parent, **kwargs):  # noqa: E501
+    def list_notes_with_http_info(self, parent, **kwargs):  # noqa: E501
         """Lists all `Notes` for a given project.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_list_notes_with_http_info(parent, async_req=True)
+        >>> thread = api.list_notes_with_http_info(parent, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -999,14 +995,14 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_list_notes" % key
+                    " to method list_notes" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'parent' is set
         if ('parent' not in params or
                 params['parent'] is None):
-            raise ValueError("Missing the required parameter `parent` when calling `grafeas_list_notes`")  # noqa: E501
+            raise ValueError("Missing the required parameter `parent` when calling `list_notes`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1018,9 +1014,9 @@ class GrafeasApi(object):
         if 'filter' in params:
             query_params.append(('filter', params['filter']))  # noqa: E501
         if 'page_size' in params:
-            query_params.append(('pageSize', params['page_size']))  # noqa: E501
+            query_params.append(('page_size', params['page_size']))  # noqa: E501
         if 'page_token' in params:
-            query_params.append(('pageToken', params['page_token']))  # noqa: E501
+            query_params.append(('page_token', params['page_token']))  # noqa: E501
 
         header_params = {}
 
@@ -1055,12 +1051,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_list_occurrences(self, parent, **kwargs):  # noqa: E501
+    def list_occurrences(self, parent, **kwargs):  # noqa: E501
         """Lists active `Occurrences` for a given project matching the filters.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_list_occurrences(parent, async_req=True)
+        >>> thread = api.list_occurrences(parent, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1074,17 +1070,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_list_occurrences_with_http_info(parent, **kwargs)  # noqa: E501
+            return self.list_occurrences_with_http_info(parent, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_list_occurrences_with_http_info(parent, **kwargs)  # noqa: E501
+            (data) = self.list_occurrences_with_http_info(parent, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_list_occurrences_with_http_info(self, parent, **kwargs):  # noqa: E501
+    def list_occurrences_with_http_info(self, parent, **kwargs):  # noqa: E501
         """Lists active `Occurrences` for a given project matching the filters.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_list_occurrences_with_http_info(parent, async_req=True)
+        >>> thread = api.list_occurrences_with_http_info(parent, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1108,14 +1104,14 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_list_occurrences" % key
+                    " to method list_occurrences" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'parent' is set
         if ('parent' not in params or
                 params['parent'] is None):
-            raise ValueError("Missing the required parameter `parent` when calling `grafeas_list_occurrences`")  # noqa: E501
+            raise ValueError("Missing the required parameter `parent` when calling `list_occurrences`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1127,9 +1123,9 @@ class GrafeasApi(object):
         if 'filter' in params:
             query_params.append(('filter', params['filter']))  # noqa: E501
         if 'page_size' in params:
-            query_params.append(('pageSize', params['page_size']))  # noqa: E501
+            query_params.append(('page_size', params['page_size']))  # noqa: E501
         if 'page_token' in params:
-            query_params.append(('pageToken', params['page_token']))  # noqa: E501
+            query_params.append(('page_token', params['page_token']))  # noqa: E501
 
         header_params = {}
 
@@ -1164,47 +1160,45 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_update_note(self, name, body, **kwargs):  # noqa: E501
+    def update_note(self, name, body, **kwargs):  # noqa: E501
         """Updates an existing `Note`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_update_note(name, body, async_req=True)
+        >>> thread = api.update_note(name, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str name: The name of the note. Should be of the form \"projects/{provider_id}/notes/{note_id}\". (required)
         :param ApiNote body: The updated note. (required)
-        :param list[str] update_mask: The fields to update.
         :return: ApiNote
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_update_note_with_http_info(name, body, **kwargs)  # noqa: E501
+            return self.update_note_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_update_note_with_http_info(name, body, **kwargs)  # noqa: E501
+            (data) = self.update_note_with_http_info(name, body, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_update_note_with_http_info(self, name, body, **kwargs):  # noqa: E501
+    def update_note_with_http_info(self, name, body, **kwargs):  # noqa: E501
         """Updates an existing `Note`.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_update_note_with_http_info(name, body, async_req=True)
+        >>> thread = api.update_note_with_http_info(name, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str name: The name of the note. Should be of the form \"projects/{provider_id}/notes/{note_id}\". (required)
         :param ApiNote body: The updated note. (required)
-        :param list[str] update_mask: The fields to update.
         :return: ApiNote
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['name', 'body', 'update_mask']  # noqa: E501
+        all_params = ['name', 'body']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1215,18 +1209,18 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_update_note" % key
+                    " to method update_note" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_update_note`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `update_note`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `grafeas_update_note`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `update_note`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1235,9 +1229,6 @@ class GrafeasApi(object):
             path_params['name'] = params['name']  # noqa: E501
 
         query_params = []
-        if 'update_mask' in params:
-            query_params.append(('updateMask', params['update_mask']))  # noqa: E501
-            collection_formats['updateMask'] = 'multi'  # noqa: E501
 
         header_params = {}
 
@@ -1274,47 +1265,45 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_update_occurrence(self, name, body, **kwargs):  # noqa: E501
+    def update_occurrence(self, name, body, **kwargs):  # noqa: E501
         """Updates an existing occurrence.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_update_occurrence(name, body, async_req=True)
+        >>> thread = api.update_occurrence(name, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str name: The name of the occurrence. Should be of the form \"projects/{project_id}/occurrences/{OCCURRENCE_ID}\". (required)
         :param ApiOccurrence body: The updated occurrence. (required)
-        :param list[str] update_mask: The fields to update.
         :return: ApiOccurrence
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_update_occurrence_with_http_info(name, body, **kwargs)  # noqa: E501
+            return self.update_occurrence_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_update_occurrence_with_http_info(name, body, **kwargs)  # noqa: E501
+            (data) = self.update_occurrence_with_http_info(name, body, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_update_occurrence_with_http_info(self, name, body, **kwargs):  # noqa: E501
+    def update_occurrence_with_http_info(self, name, body, **kwargs):  # noqa: E501
         """Updates an existing occurrence.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_update_occurrence_with_http_info(name, body, async_req=True)
+        >>> thread = api.update_occurrence_with_http_info(name, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str name: The name of the occurrence. Should be of the form \"projects/{project_id}/occurrences/{OCCURRENCE_ID}\". (required)
         :param ApiOccurrence body: The updated occurrence. (required)
-        :param list[str] update_mask: The fields to update.
         :return: ApiOccurrence
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['name', 'body', 'update_mask']  # noqa: E501
+        all_params = ['name', 'body']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1325,18 +1314,18 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_update_occurrence" % key
+                    " to method update_occurrence" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_update_occurrence`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `update_occurrence`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `grafeas_update_occurrence`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `update_occurrence`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1345,9 +1334,6 @@ class GrafeasApi(object):
             path_params['name'] = params['name']  # noqa: E501
 
         query_params = []
-        if 'update_mask' in params:
-            query_params.append(('updateMask', params['update_mask']))  # noqa: E501
-            collection_formats['updateMask'] = 'multi'  # noqa: E501
 
         header_params = {}
 
@@ -1384,12 +1370,12 @@ class GrafeasApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def grafeas_update_operation(self, name, body, **kwargs):  # noqa: E501
+    def update_operation(self, name, body, **kwargs):  # noqa: E501
         """Updates an existing operation returns an error if operation  does not exist. The only valid operations are to update mark the done bit change the result.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_update_operation(name, body, async_req=True)
+        >>> thread = api.update_operation(name, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1401,17 +1387,17 @@ class GrafeasApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.grafeas_update_operation_with_http_info(name, body, **kwargs)  # noqa: E501
+            return self.update_operation_with_http_info(name, body, **kwargs)  # noqa: E501
         else:
-            (data) = self.grafeas_update_operation_with_http_info(name, body, **kwargs)  # noqa: E501
+            (data) = self.update_operation_with_http_info(name, body, **kwargs)  # noqa: E501
             return data
 
-    def grafeas_update_operation_with_http_info(self, name, body, **kwargs):  # noqa: E501
+    def update_operation_with_http_info(self, name, body, **kwargs):  # noqa: E501
         """Updates an existing operation returns an error if operation  does not exist. The only valid operations are to update mark the done bit change the result.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.grafeas_update_operation_with_http_info(name, body, async_req=True)
+        >>> thread = api.update_operation_with_http_info(name, body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1433,18 +1419,18 @@ class GrafeasApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method grafeas_update_operation" % key
+                    " to method update_operation" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'name' is set
         if ('name' not in params or
                 params['name'] is None):
-            raise ValueError("Missing the required parameter `name` when calling `grafeas_update_operation`")  # noqa: E501
+            raise ValueError("Missing the required parameter `name` when calling `update_operation`")  # noqa: E501
         # verify the required parameter 'body' is set
         if ('body' not in params or
                 params['body'] is None):
-            raise ValueError("Missing the required parameter `body` when calling `grafeas_update_operation`")  # noqa: E501
+            raise ValueError("Missing the required parameter `body` when calling `update_operation`")  # noqa: E501
 
         collection_formats = {}
 

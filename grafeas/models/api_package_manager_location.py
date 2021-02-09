@@ -37,7 +37,7 @@ class ApiPackageManagerLocation(object):
     }
 
     attribute_map = {
-        'cpe_uri': 'cpeUri',
+        'cpe_uri': 'cpe_uri',
         'version': 'version',
         'path': 'path'
     }

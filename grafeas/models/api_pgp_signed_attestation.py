@@ -38,8 +38,8 @@ class ApiPgpSignedAttestation(object):
 
     attribute_map = {
         'signature': 'signature',
-        'content_type': 'contentType',
-        'pgp_key_id': 'pgpKeyId'
+        'content_type': 'content_type',
+        'pgp_key_id': 'pgp_key_id'
     }
 
     def __init__(self, signature=None, content_type=None, pgp_key_id=None):  # noqa: E501

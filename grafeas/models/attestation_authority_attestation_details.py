@@ -35,7 +35,7 @@ class AttestationAuthorityAttestationDetails(object):
     }
 
     attribute_map = {
-        'pgp_signed_attestation': 'pgpSignedAttestation'
+        'pgp_signed_attestation': 'pgp_signed_attestation'
     }
 
     def __init__(self, pgp_signed_attestation=None):  # noqa: E501

@@ -35,7 +35,7 @@ class ApiFileHashes(object):
     }
 
     attribute_map = {
-        'file_hash': 'fileHash'
+        'file_hash': 'file_hash'
     }
 
     def __init__(self, file_hash=None):  # noqa: E501

@@ -38,10 +38,10 @@ class ApiGerritSourceContext(object):
     }
 
     attribute_map = {
-        'host_uri': 'hostUri',
-        'gerrit_project': 'gerritProject',
-        'revision_id': 'revisionId',
-        'alias_context': 'aliasContext'
+        'host_uri': 'host_uri',
+        'gerrit_project': 'gerrit_project',
+        'revision_id': 'revision_id',
+        'alias_context': 'alias_context'
     }
 
     def __init__(self, host_uri=None, gerrit_project=None, revision_id=None, alias_context=None):  # noqa: E501

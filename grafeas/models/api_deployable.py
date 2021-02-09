@@ -35,7 +35,7 @@ class ApiDeployable(object):
     }
 
     attribute_map = {
-        'resource_uri': 'resourceUri'
+        'resource_uri': 'resource_uri'
     }
 
     def __init__(self, resource_uri=None):  # noqa: E501

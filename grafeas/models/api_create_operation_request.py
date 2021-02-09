@@ -38,7 +38,7 @@ class ApiCreateOperationRequest(object):
 
     attribute_map = {
         'parent': 'parent',
-        'operation_id': 'operationId',
+        'operation_id': 'operation_id',
         'operation': 'operation'
     }
 

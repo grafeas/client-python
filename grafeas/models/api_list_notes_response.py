@@ -37,7 +37,7 @@ class ApiListNotesResponse(object):
 
     attribute_map = {
         'notes': 'notes',
-        'next_page_token': 'nextPageToken'
+        'next_page_token': 'next_page_token'
     }
 
     def __init__(self, notes=None, next_page_token=None):  # noqa: E501

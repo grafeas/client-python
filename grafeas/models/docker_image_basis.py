@@ -36,7 +36,7 @@ class DockerImageBasis(object):
     }
 
     attribute_map = {
-        'resource_url': 'resourceUrl',
+        'resource_url': 'resource_url',
         'fingerprint': 'fingerprint'
     }
 

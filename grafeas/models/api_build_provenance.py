@@ -48,18 +48,18 @@ class ApiBuildProvenance(object):
 
     attribute_map = {
         'id': 'id',
-        'project_id': 'projectId',
+        'project_id': 'project_id',
         'commands': 'commands',
-        'built_artifacts': 'builtArtifacts',
-        'create_time': 'createTime',
-        'start_time': 'startTime',
-        'finish_time': 'finishTime',
+        'built_artifacts': 'built_artifacts',
+        'create_time': 'create_time',
+        'start_time': 'start_time',
+        'finish_time': 'finish_time',
         'creator': 'creator',
-        'logs_bucket': 'logsBucket',
-        'source_provenance': 'sourceProvenance',
-        'trigger_id': 'triggerId',
-        'build_options': 'buildOptions',
-        'builder_version': 'builderVersion'
+        'logs_bucket': 'logs_bucket',
+        'source_provenance': 'source_provenance',
+        'trigger_id': 'trigger_id',
+        'build_options': 'build_options',
+        'builder_version': 'builder_version'
     }
 
     def __init__(self, id=None, project_id=None, commands=None, built_artifacts=None, create_time=None, start_time=None, finish_time=None, creator=None, logs_bucket=None, source_provenance=None, trigger_id=None, build_options=None, builder_version=None):  # noqa: E501

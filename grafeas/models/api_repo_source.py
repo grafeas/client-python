@@ -39,11 +39,11 @@ class ApiRepoSource(object):
     }
 
     attribute_map = {
-        'project_id': 'projectId',
-        'repo_name': 'repoName',
-        'branch_name': 'branchName',
-        'tag_name': 'tagName',
-        'commit_sha': 'commitSha'
+        'project_id': 'project_id',
+        'repo_name': 'repo_name',
+        'branch_name': 'branch_name',
+        'tag_name': 'tag_name',
+        'commit_sha': 'commit_sha'
     }
 
     def __init__(self, project_id=None, repo_name=None, branch_name=None, tag_name=None, commit_sha=None):  # noqa: E501

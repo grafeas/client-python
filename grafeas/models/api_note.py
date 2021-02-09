@@ -51,21 +51,21 @@ class ApiNote(object):
 
     attribute_map = {
         'name': 'name',
-        'short_description': 'shortDescription',
-        'long_description': 'longDescription',
+        'short_description': 'short_description',
+        'long_description': 'long_description',
         'kind': 'kind',
-        'vulnerability_type': 'vulnerabilityType',
-        'build_type': 'buildType',
-        'base_image': 'baseImage',
+        'vulnerability_type': 'vulnerability_type',
+        'build_type': 'build_type',
+        'base_image': 'base_image',
         'package': 'package',
         'deployable': 'deployable',
         'discovery': 'discovery',
-        'attestation_authority': 'attestationAuthority',
-        'related_url': 'relatedUrl',
-        'expiration_time': 'expirationTime',
-        'create_time': 'createTime',
-        'update_time': 'updateTime',
-        'operation_name': 'operationName'
+        'attestation_authority': 'attestation_authority',
+        'related_url': 'related_url',
+        'expiration_time': 'expiration_time',
+        'create_time': 'create_time',
+        'update_time': 'update_time',
+        'operation_name': 'operation_name'
     }
 
     def __init__(self, name=None, short_description=None, long_description=None, kind=None, vulnerability_type=None, build_type=None, base_image=None, package=None, deployable=None, discovery=None, attestation_authority=None, related_url=None, expiration_time=None, create_time=None, update_time=None, operation_name=None):  # noqa: E501

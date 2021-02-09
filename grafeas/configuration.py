@@ -40,7 +40,7 @@ class Configuration(object):
             return
 
         # Default Base url
-        self.host = "https://localhost"
+        self.host = "http://localhost"
         # Temp file folder for downloading files
         self.temp_folder_path = None
 
@@ -241,5 +241,5 @@ class Configuration(object):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: v1alpha1\n"\
-               "SDK Package Version: 1.0.0".\
+               "SDK Package Version: v1alpha1".\
                format(env=sys.platform, pyversion=sys.version)

@@ -45,7 +45,7 @@ class ApiCommand(object):
         'args': 'args',
         'dir': 'dir',
         'id': 'id',
-        'wait_for': 'waitFor'
+        'wait_for': 'wait_for'
     }
 
     def __init__(self, name=None, env=None, args=None, dir=None, id=None, wait_for=None):  # noqa: E501

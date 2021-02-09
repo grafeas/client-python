@@ -36,7 +36,7 @@ class ApiRepoId(object):
     }
 
     attribute_map = {
-        'project_repo_id': 'projectRepoId',
+        'project_repo_id': 'project_repo_id',
         'uid': 'uid'
     }
 
