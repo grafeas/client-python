@@ -1,4 +1,6 @@
 {
+    "projectName": "Grafeas",
     "packageVersion": "v1alpha1",
-    "packageName": "grafeas"
+    "packageName": "grafeas",
+    "licenseName": "Apache 2.0"
 }
