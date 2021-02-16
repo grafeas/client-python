@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **remediation** | **str** |  | [optional] 
 **create_time** | **datetime** | Output only. The time this &#x60;Occurrence&#x60; was created. | [optional] 
 **update_time** | **datetime** | Output only. The time this &#x60;Occurrence&#x60; was last updated. | [optional] 
+**operation_name** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
