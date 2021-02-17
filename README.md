@@ -19,7 +19,6 @@ To install the package from this repository:
 ```sh
 pip3 install git+https://github.com/grafeas/client-python.git#egg=Grafeas --user
 ```
-Note: If running on Linux, you need to escape the `&` as shown above.  Other systems may not require the escape character.
 
 Then import the package:
 ```python
